@@ -566,4 +566,62 @@ html,body{
             opacity: .7;
         }
     }
+    &__calculator{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    &__item{
+        width: 850px;
+        height: 118px;
+        background: rgba(118, 72, 46, 0.2);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        &_left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &_select{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            width: 116px;
+            height: 45px;
+            background: #32261B;
+            border: 2px solid #5F3721;
+            border-radius: 15px;
+            &_name{
+                font-family: 'Exo 2';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                color: #F4F0EC;
+                @include font-border;
+            }
+            & i{
+                font-size: 10px;
+                color: rgba(244, 240, 236, 0.5);
+            }
+        }
+        &_balance{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        &_list{
+            display: none;
+        }
+    }
 }
