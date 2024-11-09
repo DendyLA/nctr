@@ -22,3 +22,15 @@ mainLink.addEventListener('click', (e) => {
     e.preventDefault();
     copyText();
 });
+
+//Jupiter Terminal
+window.Jupiter.init({
+    displayMode: "integrated",
+    integratedTargetId: "integrated-terminal",
+    endpoint: "https://api.mainnet-beta.solana.com",
+    formProps: {
+        fixedOutputMint: true,
+        swapMode: "ExactIn",
+        initialOutputMint: "AgnHzGspNu7F3nFM4izuPt5g7m1URjVaTaFNgvqSXcjC",
+    },
+});

@@ -151,6 +151,9 @@ html,body{
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
+        & a:hover{
+            opacity: .7;
+        }
     }
     &__item{
         display: flex;
@@ -475,6 +478,7 @@ html,body{
         min-height: 761px;
         width: 1225px;
         &_wrapper{
+            position: relative;
             width: 900px;
             height: 490px;
             background: #32261B;
@@ -483,145 +487,50 @@ html,body{
             display: flex;
             flex-direction: column;
             gap: 20px;
+            overflow: hidden;
         }
     }
-    &__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+    .bg-\[\#212128\]{
+        background: rgba(118, 72, 46, 0.2) !important;
+        border-radius: 20px;
     }
-    &__left{
-        width: 235px;
-        height: 48px;
-        background-image: url(../img/desk__big.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7px;
+    .bg-\[\#36373E\]{
+        background: #32261B !important;
+        border: 2px solid #5F3721 !important;
+        border-radius: 15px !important;
+    }
+    .bg-\[\#191B1F\]{
+        background: #895336 !important;
+        border: 2px solid #5F3721 !important;
+        border-radius: 40px 41px 41px 41px !important;
+    }
+    #jupiter-terminal{
+        height: 460px !important;
+    }
+    .w-full.px-2 .\!bg-transparent.css-g53se3 button{
+        background-image: url(../img/transaction__btn.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-color: #32261b !important;
+        border: none !important;
+        height: 75px !important;
         font-family: 'Exo 2';
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
-        color: #F4F0EC;
+        color: #FFFFFF;
         @include font-border;
-        &:hover{
-            color: #bdbcbc;
-            opacity: 0.7;
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    }
-    &__right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    &__reset{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 34px;
-        height: 34px;
-        border: 2px solid #5F3721;
-        border-radius: 17px;
-        & i{
-            color: #F4F0EC;
-            opacity: .5;
-        }
-    }
-    &__setting{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 90px;
-        height: 34px;
-        border: 2px solid #5F3721;
-        border-radius: 40px 41px 41px 41px;
-        color: #F4F0EC;
-        opacity: .5;
-        font-family: 'Exo 2';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-    }
-    &__connect{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 128px;
-        height: 34px;
-        background: #895336;
-        border: 2px solid #5F3721;
-        border-radius: 40px 41px 41px 41px;
-        font-family: 'Exo 2';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        color: #F4F0EC;
-        @include font-border;
         &:hover{
             opacity: .7;
         }
     }
-    &__calculator{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-    }
-    &__item{
-        width: 850px;
-        height: 118px;
-        background: rgba(118, 72, 46, 0.2);
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        &_left{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        &_select{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            width: 116px;
-            height: 45px;
-            background: #32261B;
-            border: 2px solid #5F3721;
-            border-radius: 15px;
-            &_name{
-                font-family: 'Exo 2';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                color: #F4F0EC;
-                @include font-border;
-            }
-            & i{
-                font-size: 10px;
-                color: rgba(244, 240, 236, 0.5);
-            }
-        }
-        &_balance{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            font-family: 'Exo 2';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.5);
-        }
 
-        &_list{
-            display: none;
-        }
-    }
+
 }

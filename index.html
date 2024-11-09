@@ -168,90 +168,14 @@
                 <div class="buy__title">BUY $NCTR</div>
                 <div class="buy__content">
                     <div class="buy__content_wrapper">
-                        <div class="buy__header">
-                            <div class="buy__left"><img src="img/icons/glob.png" alt="glob">Buy on Jupiter</div>
-                            <div class="buy__right">
-                                <div class="buy__reset"><i class="fa-solid fa-rotate-right"></i></div>
-                                <div class="buy__setting">
-                                    <i class="fa-solid fa-sliders"></i>
-                                    <div class="buy__setting_text">0,5 %</div>
-                                </div>
-                                <div class="buy__connect">Connect Wallet</div>
-                            </div>
-                        </div>
-                        <form action="" class="buy__calculator">
-                            <div class="buy__item buy__in">
-                                <div class="buy__item_left">
-                                    <div class="buy__item_select">
-                                        <img src="img/icons/solana__money.png" alt="solana">
-                                        <div class="buy__item_select_name">SOL</div>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                    <!-- Реализовать появлении выпадающего меню и выбора -->
-                                    <ul class="buy__item_list">  
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">SOL</div>
-                                        </li>
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">BTC</div>
-                                        </li>
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">USDT</div>
-                                        </li>
-                                    </ul>
-                                    <div class="buy__item_balance">
-                                        <i class="fa-solid fa-wallet"></i>
-                                        <div class="buy__item_money">0.000000</div>
-                                        <div class="buy__item_name">SOL</div>
-                                    </div>
-                                </div>
-                                <div class="buy__item_right"></div>
-                            </div>
-
-                            <div class="buy__change"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
-
-                            <div class="buy__item buy__out">
-                                <div class="buy__item_left">
-                                    <div class="buy__item_select">
-                                        <img src="img/icons/solana__money.png" alt="solana">
-                                        <div class="buy__item_select_name">NCTR</div>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                    <ul class="buy__item_list">
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">SOL</div>
-                                        </li>
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">SOL</div>
-                                        </li>
-                                        <li class="buy__item_i">
-                                            <img src="img/icons/solana__money.png" alt="solana">
-                                            <div class="buy__item_select_name">SOL</div>
-                                        </li>
-                                    </ul>
-                                    <div class="buy__item_balance">
-                                        <i class="fa-solid fa-wallet"></i>
-                                        <div class="buy__item_money">0.000000</div>
-                                        <div class="buy__item_name">NCTR</div>
-                                    </div>
-                                </div>
-                                <div class="buy__item_right"></div>
-                            </div>
-                            <div class="buy__button">Connect Wallet</div>
-                        </form>
+                        <div id="integrated-terminal" style="width: 850px; height: 490px;"></div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
 
-
+    <script src='https://terminal.jup.ag/main-v3.js'></script>
     <script src="js/script.js"></script>
 </body>
 </html>
