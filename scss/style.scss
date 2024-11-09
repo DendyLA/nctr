@@ -9,6 +9,9 @@
                 -1px 0 0 #895336,
                 0 -1px 0 #895336;
 }
+@mixin title{
+    font-size: clamp(24px, 10vw, 120px);
+}
 .active{
     display: block !important;
 }
@@ -246,7 +249,7 @@ html,body{
         font-family: 'Exo 2';
         font-style: normal;
         font-weight: 700;
-        font-size: 120px;
+        @include title;
         color: #F4F0EC;
         text-shadow: 5px 5px 0 #895336, 
                     -5px -5px 0 #895336,  
@@ -455,7 +458,7 @@ html,body{
         font-family: 'Exo 2';
         font-style: normal;
         font-weight: 700;
-        font-size: 120px;
+        @include title;
         color: #F4F0EC;
         text-shadow: 5px 5px 0 #895336, 
                     -5px -5px 0 #895336,  
@@ -533,4 +536,112 @@ html,body{
     }
 
 
+}
+
+.utility{
+    background-color: #322418;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    &__title{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        @include title;
+        color: #F4F0EC;
+        text-shadow: 5px 5px 0 #895336, 
+                    -5px -5px 0 #895336,  
+                    5px -5px 0 #895336, 
+                    -5px 5px 0 #895336,  
+                    0px 5px 0 #895336, 
+                    0px -5px 0 #895336,
+                    5px 0px 0 #895336,
+                    -5px 0px 0 #895336,
+                    2px 10px 0 #E87821;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 20px;
+        position: relative;
+        width: 570px;
+        height: 319px;
+        background: #32261B;
+        box-shadow: -18px 18px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        border: 3px solid #C15416;
+        padding: 30px;
+        &_big{
+            width: 1170px;
+            height: 550px;
+            background: radial-gradient(50% 50% at 50% 50%, #DA7539 0%, #915226 100%);
+            border: 3px solid #FF9C00;
+            box-shadow: 18px 18px 4px rgba(0, 0, 0, 0.25);
+            padding: 0;
+            .utility__item_btn{
+                width: 200px;
+                height: 50px;
+            }
+        }
+        &_wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            gap: 20px;
+            padding: 30px;
+            background-image: url(../img/utility_bg.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 100%;
+        }
+        &_title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            color: #F4F0EC;
+        }
+        &_descr{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        &_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            background-image: url(../img/desk__big.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #F4F0EC;
+            @include font-border;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
 }
