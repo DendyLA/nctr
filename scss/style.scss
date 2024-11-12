@@ -77,6 +77,11 @@ html,body{
             background: #a56542;
         }
     }
+    &__burger{
+        // display: none;
+        font-size: 50px;
+        color: #FF9C00;
+    }
 }
 
 .logo{
@@ -604,9 +609,9 @@ html,body{
             gap: 20px;
             padding: 30px;
             background-image: url(../img/utility_bg.png);
-            background-position: top;
+            background-position: bottom;
             background-repeat: no-repeat;
-            background-size: auto;
+            background-size: contain;
             height: 100%;
         }
         &_title{
@@ -762,6 +767,9 @@ html,body{
                 opacity: .7;
             }
         }
+        &_img_mobile{
+            display: none;
+        }
     }
 }
 .community{
@@ -813,4 +821,398 @@ html,body{
             opacity: .7;
         }
     }
+}
+
+
+@media (max-width: 1200px) {
+    .main{
+
+        &__img{
+            width: 300px;
+        }
+    }
+    .tokenomic{
+        &__ellipse{
+            width: 400px;
+            right: -107px;
+            top: 40px;
+        }
+        &__percent{
+
+            &_first{
+                top: 9px;
+                right: -89px;
+            }
+            &_second{
+                top: 10px;
+                right: 107px;
+            }
+            &_third{
+                top: 227px;
+                right: 248px;
+            }
+            &_fourth{
+                top: 315px;
+                right: 135px;
+            }
+        }
+    }
+}
+
+/* Для экранов 992px и ниже */
+@media (max-width: 992px) {
+    .main{
+
+        &__img{
+            width: 200px;
+        }
+    }
+    .tokenomic{
+        &__ellipse{
+            display: none;
+        }
+        &__percent{
+            display: none;
+            
+        }
+        &__content_title{
+            font-size: 25px;
+        }
+        &__info{
+            display: none;
+        }
+    }
+    .buy{
+        &__content{
+            width: 1000px;
+            &_wrapper{
+                width: 751px;
+                height: 410px;
+            }
+        }
+    }
+    .utility{
+        &__item{
+            width: 440px;
+            &_title{
+                font-size: 28px;
+            }
+            &_descr{
+                font-size: 16px;
+            }
+            &_big{
+                width: 926px;
+            }
+        }
+    }
+    .verse{
+        &__item{
+            width: 440px;
+            height: 380px;
+            &_title{
+                font-size: 28px;
+            }
+            &_descr{
+                font-size: 16px;
+            }
+            &_big{
+                width: 926px;
+            }
+            &_img{
+                max-width: 240px;
+            }
+            &_wrapper{
+                background-size: cover;
+            }
+        }
+    }
+}
+
+/* Для экранов 768px и ниже (например, планшеты в портретной ориентации) */
+@media (max-width: 768px) {
+    .buy{
+        &__content{
+            width:820px;
+            background-image: url(../img/transaction__desk_big.png);
+            &_wrapper{
+                width: 590px;
+                height: 399px;
+            }
+        }
+        
+    }
+    .utility{
+        &__item{
+            width: 340px;
+            &_wrapper{
+                background-size: cover;
+            }
+            &_title{
+                font-size: 28px;
+            }
+            &_descr{
+                font-size: 16px;
+            }
+            &_big{
+                width: 730px;
+            }
+        }
+    }
+    .verse{
+        &__item{
+            width: 340px;
+            height: 230px;
+            &_title{
+                font-size: 20px;
+            }
+            &_descr{
+                font-size: 14px;
+            }
+            &_big{
+                width: 730px;
+                height: 400px;
+            }
+            &_img{
+                max-width: 100px;
+                height: 170px;
+            }
+            
+        }
+    }
+}
+
+/* Для экранов 576px и ниже (например, телефоны в портретной ориентации) */
+@media (max-width: 576px) {
+    .header{
+        position: relative;
+        &__wrapper{
+            gap: 20px;
+        }
+        &__nav{
+            display: none;
+            position: absolute;
+            top: 100px;
+            padding: 20px 0;
+            flex-direction: column;
+            width: 100vw;
+            background-color: #32261b;
+        }
+        &__x, &__tg{
+            width: 42px;
+            height: 38px;
+        }
+    }
+    .main{
+        &__text{
+            &_content{
+                font-size: 14px;
+            }
+            height: 100%;
+            width: 300px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+        &__img{
+            display: none;
+        }
+        &__item{
+            width: 123px;
+            height: 44px;
+            font-size: 14px;
+            &_big{
+                background-image: url(../img/desk.png);
+            }
+        }
+    }
+
+
+    .tokenomic{
+        &__content{
+            padding: 40px 40px;
+            background-image: none;
+            align-items: center;
+            &_item{
+                width: 400px;
+            }
+            &_title{
+                font-size: 20px;
+            }
+            &_text{
+                font-size: 16px;
+            }
+            &_shield{
+                width: 372px;
+                font-size: 16px;
+            }
+            &_sep{
+                &_first{
+                    width: 70px;
+                }
+                &_second{
+                    width: 70px;
+                }
+                &_third{
+                    width: 70px;
+                }
+                &_fourth{
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .buy{
+        padding: 50px;
+        &__content{
+            width: 630px;
+            background-image: url(../img/transaction__mobile.png);
+            &_wrapper{
+                width: 448px;
+                height: 683px;
+            }
+        }
+        .w-full.px-2 .\!bg-transparent.css-g53se3 button{
+            background-image: url(../img/transaction__btn_mobile.png) !important;
+        }
+    }
+
+    .active__burger{
+        display: flex;
+    }
+    .utility{
+        &__content{
+            width: 100%;
+        }
+        &__item{
+            width: 340px;
+            height: 370px;
+            &_wrapper{
+                background-image: url(../img/utility_bg_mobile.png);
+                background-size: contain;
+                background-position: bottom;
+            }
+        }
+    }
+    .verse{
+        &__content{
+            width: 100%;
+        }
+        &__item{
+            width: 340px;
+        }
+        &__item{
+            flex-direction: column;
+            height: 400px;
+            justify-content: space-between;
+            align-items: center;
+            &_img{
+                display: none;
+                &_mobile{
+                    display: block;
+                }
+            }
+            &_big{
+                height: 590px;
+            }
+            &_wrapper{
+                background-image: url(../img/verse/verse_bg_mobile.png);
+                background-size: contain;
+                background-position: bottom;
+            }
+        }
+    }
+    .buy{
+        padding: 0 ;
+        &__wrapper{
+            gap: 0px;
+        }
+        &__content{
+            width: 360px;
+            background-image: url(../img/transaction__mobile.png);
+            &_wrapper{
+                width: 310px;
+                height: 424px;
+                padding: 20px 0;
+            }
+        }
+        .w-full.px-2 .\!bg-transparent.css-g53se3 button{
+            background-image: url(../img/transaction__btn_mobile.png) !important;
+        }
+    }
+    .tokenomic{
+        &__wrapper{
+            gap: 300px;
+        }
+        &__ellipse{
+            display: block;
+            right: 0;
+            top: -256px
+        }
+        &__percent{
+            display: block;
+            &_first{
+                top: -282px;
+                right: 0;
+            }
+            &_second{
+                top: -283px;
+                left: 108px;
+                width: 100%;
+            }
+            &_third{
+                top: -119px;
+                left: 0;
+                width: 100%;
+            }
+            &_fourth{
+                top: -51px;
+                right: -71px;
+                width: 100%;
+            }
+            
+        }
+        &__content_title{
+            font-size: 25px;
+        }
+        &__info{
+            display: none;
+        }
+        &__content{
+            padding: 40px 40px;
+            background-image: none;
+            align-items: center;
+            &_item{
+                width: 310px;
+            }
+            &_title{
+                font-size: 20px;
+            }
+            &_text{
+                font-size: 16px;
+            }
+            &_shield{
+                width: 310px;
+                font-size: 16px;
+            }
+            &_sep{
+                &_first{
+                    width: 70px;
+                }
+                &_second{
+                    width: 70px;
+                }
+                &_third{
+                    width: 70px;
+                }
+                &_fourth{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+/* Для экранов 480px и ниже (например, маленькие телефоны) */
+@media (max-width: 480px) {
+    /* Ваши стили для экранов до 480px */
 }
