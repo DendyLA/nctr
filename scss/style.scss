@@ -1001,6 +1001,9 @@ html,body{
             width: 42px;
             height: 38px;
         }
+        &__burger{
+            display: block;
+        }
     }
     .main{
         &__text{
