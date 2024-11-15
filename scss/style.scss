@@ -446,6 +446,7 @@ html,body{
             font-size: clamp(14px, 17px ,20px);
         }
     }
+    
 }
 
 
@@ -539,8 +540,9 @@ html,body{
             opacity: .7;
         }
     }
-
-
+    .flex.flex-col.h-full.w-full.py-4.px-2.bg-v3-modal{
+        background: #32261B !important;
+    }
 }
 
 .utility{
@@ -1006,6 +1008,13 @@ html,body{
         }
     }
     .main{
+        &__bg{
+            background-position: top;
+        }
+        &__global{
+            width: 25px;
+            height: 25px;
+        }
         &__text{
             &_content{
                 font-size: 14px;
@@ -1015,6 +1024,13 @@ html,body{
         }
         &__link{
             font-size: 14px;
+            word-break: break-all;
+            & img{
+                height: 20px;
+            }
+        }
+        #notification{
+            left: 30%;
         }
         &__img{
             display: none;
@@ -1031,6 +1047,9 @@ html,body{
 
 
     .tokenomic{
+        &__wrapper{
+            width: 300px;
+        }
         &__content{
             padding: 40px 40px;
             background-image: none;
@@ -1064,20 +1083,6 @@ html,body{
             }
         }
     }
-    .buy{
-        padding: 50px;
-        &__content{
-            width: 630px;
-            background-image: url(../img/transaction__mobile.png);
-            &_wrapper{
-                width: 448px;
-                height: 683px;
-            }
-        }
-        .w-full.px-2 .\!bg-transparent.css-g53se3 button{
-            background-image: url(../img/transaction__btn_mobile.png) !important;
-        }
-    }
 
     .active__burger{
         display: flex;
@@ -1093,6 +1098,9 @@ html,body{
                 background-image: url(../img/utility_bg_mobile.png);
                 background-size: contain;
                 background-position: bottom;
+            }
+            &_big{
+                height:550px;
             }
         }
     }
@@ -1115,7 +1123,7 @@ html,body{
                 }
             }
             &_big{
-                height: 590px;
+                height: 630px;
             }
             &_wrapper{
                 background-image: url(../img/verse/verse_bg_mobile.png);
@@ -1125,21 +1133,26 @@ html,body{
         }
     }
     .buy{
-        padding: 0 ;
+        padding: 0;
         &__wrapper{
             gap: 0px;
         }
         &__content{
-            width: 360px;
+            width: 373px;
             background-image: url(../img/transaction__mobile.png);
             &_wrapper{
                 width: 310px;
-                height: 424px;
+                height: 480px;
                 padding: 20px 0;
             }
         }
         .w-full.px-2 .\!bg-transparent.css-g53se3 button{
             background-image: url(../img/transaction__btn_mobile.png) !important;
+        }
+        button.py-2.px-3.h-7.flex.items-center.rounded-2xl.text-xs.bg-\[\#191B1F\].text-white{
+            width: 85px !important;
+            font-size: 10px !important;
+            padding: 3px !important;
         }
     }
     .tokenomic{
